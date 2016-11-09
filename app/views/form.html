@@ -1,0 +1,78 @@
+<head>
+
+	<title> SAARANG </title>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="styles/form.css">
+	
+</head>
+
+<body>
+	
+	<h3> FILL THIS AND WIN EXCITING GIFT VOUCHERS </h3>
+	<br>
+	<p>Name : <input type="text" ng-model="name" placeholder="Enter name here"></p>
+	<p ng-show = "showreferee">Referred By : <input type="text" value="{{referee_name}} - {{referee_index}}" ng-model="referee"></p>
+	
+	<p> Choose any number of boxes : </p>
+	<div class="row">
+		<div class="col-md-4">
+			<div id="tile1" class="tile" onclick="set_tile(this)"> 1 </div> <br>
+		</div>
+		<div class="col-md-4">
+			<div id="tile2" class="tile" onclick="set_tile(this)"> 2 </div> <br>
+		</div>
+		<div class="col-md-4">
+				<div id="tile3" class="tile" onclick="set_tile(this)"> 3 </div> <br>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-4">
+			<div id="tile4" class="tile" onclick="set_tile(this)"> 4 </div> <br>
+		</div>
+		<div class="col-md-4">
+			<div id="tile5" class="tile" onclick="set_tile(this)"> 5 </div> <br>
+		</div>
+		<div class="col-md-4">
+				<div id="tile6" class="tile" onclick="set_tile(this)"> 6 </div> <br>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-4">
+			<div id="tile7" class="tile" onclick="set_tile(this)"> 7 </div> <br>
+		</div>
+		<div class="col-md-4">
+			<div id="tile8" class="tile" onclick="set_tile(this)"> 8 </div> <br>
+		</div>
+		<div class="col-md-4">
+				<div id="tile9" class="tile" onclick="set_tile(this)"> 9 </div>
+		</div>
+	</div>
+
+		
+	
+	<div class = "row" id="submit">
+		<br>
+		<button type="button" class="btn btn-info" id="submit" ng-click="on_submit()" > SUBMIT </button> 
+		<br><br><br>
+	</div>
+
+	<div class = "row" id="url" ng-show="showlink"> Refer to others with this link: <a ng-href="/#/{{index}}/"> http://referral.saarang.org/#/{{index}}/" </a> </div>
+		
+
+</body>	
+
+<script type="text/javascript">
+	
+		document.getElementById("form_page").className = "active";
+		document.getElementById("about_page").className = "inactive";
+		
+</script>
+
+
+
+	

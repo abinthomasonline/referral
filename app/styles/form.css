@@ -1,0 +1,56 @@
+body
+{
+	background-color: #ecf0f1;
+	max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+.tile
+{
+	border-radius: 3%;
+	height: 100%;
+	width: 100%;	
+	vertical-align: center;
+	text-align: center;	 
+	padding:35%;
+	font-size: 30px;
+	background-color: #2980b9;	
+}
+
+.tile:hover
+{
+	border-radius: 3%;
+	height: 100%;
+	width: 100%;	
+	vertical-align: center;
+	text-align: center;	 
+	padding:35%;
+	background-color: #9b59b6;
+	font-size: 30px;
+}
+
+.selected
+{
+	border-radius: 3%;
+	height: 100%;
+	width: 100%;	
+	vertical-align: center;
+	text-align: center;	 
+	padding:35%;
+	font-size: 30px;
+	box-shadow: 5px 5px 5px 5px #8e44ad;
+	background-color: #9b59b6;
+}
+
+#submit
+{
+	margin: auto;
+	display: block;
+	font-weight: bolder;
+	align : center;
+	height: 30%;
+	width: 50%;
+}
